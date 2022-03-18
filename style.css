@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333;
+    background: #a3c4f3;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1 ,h2 {
+    margin-bottom: 0.9em;
+}
+
+.container {
+    max-width: 69em;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.navbar {
+    background: #f72585;
+    color: white;
+    height: 3.75em;
+}
+
+ul {
+    list-style: none;
+    
+}
+
+ .navbar .logo {
+    font-size: x-large; 
+    font-weight: bold;
+ }
+
+ .navbar a {
+     color: #fff;
+     text-decoration: none;
+     font-size: 1.1em;
+     font-weight: bold;
+ }
+
+ .navbar a:hover{
+    color: #b9fbc0;
+}
+
+ .navbar .container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+ }
+
+ .navbar ul {
+     display: flex;
+ }
+
+ .navbar ul li {
+     margin-left: 1.25em;
+ }
+
+.header {
+    background: black;
+    color: white;
+    min-height: 400px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header img {
+    max-width: 400px;
+}
+
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boxes .container{
+   display: flex;
+   justify-content: space-between;
+}
+
+.box {
+    flex: 1;
+    background: #7209b7;
+    color: white;
+    border-radius: 10px;
+    margin: 20px 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+    padding: 15px 20px;
+}
+
+.box i {
+    margin-right: 10px;
+}
+
+.box:nth-of-type(1){
+    background: #7209b7;
+}
+
+.box:nth-of-type(2){
+    background: #480ca8;
+}
+
+.box:nth-of-type(3){
+    background: #3f37c9;
+}
+
+@media(max-width: 768px){
+    .header .container {
+        flex-direction: column;
+        padding-top: 1.25em;
+        text-align: center;
+    }
+
+    .boxes .container {
+        display: block;
+        text-align: center;
+    }
+}
